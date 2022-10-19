@@ -40,9 +40,9 @@ namespace Q2找出數值區間內的所有質數
 			//最小值直接進位
 			limitMin = Math.Ceiling(limitMin);
 			
-			if (limitMin < 5)
+			if (limitMin /2 == 1)
 			{
-				Console.Write(" 2 3 5");
+				Console.Write(" 2");
 			}
 
 			//將limitMin固定為奇數
