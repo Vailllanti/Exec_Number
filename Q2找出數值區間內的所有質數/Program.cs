@@ -35,7 +35,7 @@ namespace Q2找出數值區間內的所有質數
 			//取最小值
 			double limitMin = Math.Min(result1, result2);
 			
-			Console.Write($"介於 {limitMin} ~ {limitMax} 的質數有: ");
+			Console.Write($"介於 {limitMin} ~ {limitMax} 的質數有:");
 
 			//最小值直接進位
 			limitMin = Math.Ceiling(limitMin);
