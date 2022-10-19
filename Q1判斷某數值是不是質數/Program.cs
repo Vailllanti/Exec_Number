@@ -17,7 +17,7 @@ namespace Q1判斷某數值是不是質數
 
 			if (isDouble == false)
 			{
-				Console.WriteLine("抱歉，您好像輸入的不是數字");
+				Console.WriteLine("抱歉，您輸入的好像不是數字");
 				return;
 			}
 			
@@ -33,7 +33,13 @@ namespace Q1判斷某數值是不是質數
 				return ;
 			}
 
-			if (result % 2 == 0 || result/2 == 1)
+			if (result / 2 == 1)
+			{
+				Console.WriteLine($"{result}為質數");
+				return;
+			}
+
+			if (result % 2 == 0 )
 			{
 				Console.WriteLine($"{result}不為質數");
 				return;
