@@ -33,7 +33,7 @@ namespace Q1判斷某數值是不是質數
 				return ;
 			}
 
-			if (result % 2 == 0)
+			if (result % 2 == 0 || result/2 == 1)
 			{
 				Console.WriteLine($"{result}不為質數");
 				return;
