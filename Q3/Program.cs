@@ -15,17 +15,18 @@ namespace Q3
         //請問這個四位數值是什麼?
 		static void Main(string[] args)
 		{
-			double inputNumber;
-			double sqrt;
-			double ceiling;
-			for (double i = 11; i <= 99; i+=11)
+			int inputNumber;
+			string sqrt;
+			const int commonDifference = 11;
+			const int hundred = 100;
+
+			for (int i = 1; i <= 9; i++)
 			{
-				for (double k = 11; k <= 99; k+=11)
+				for (int k = 1; k <= 9; k++)
 				{
-					inputNumber = i * 100 + k;
-					sqrt = Math.Sqrt(inputNumber);
-					ceiling = Math.Ceiling(sqrt);
-					if (ceiling == sqrt)
+					inputNumber = (i * hundred  + k) *commonDifference;
+					sqrt = Convert.ToString( Math.Sqrt(inputNumber));
+					if ( int.TryParse(sqrt,out int s) == true)
 					{
 						Console.WriteLine($"答案是{inputNumber}");
 						return;
